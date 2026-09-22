@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonelikeme Iann | Photography & Creativity</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #ffffff;
+            --accent-color: #ff3b30;
+            --muted-color: #8e8e93;
+            --card-bg: #1c1c1e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #2c2c2e;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--accent-color);
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .location-tag {
+            display: inline-block;
+            background-color: var(--card-bg);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--muted-color);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            color: #d1d1d6;
+            margin-bottom: 30px;
+        }
+
+        /* Placeholder Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .portfolio-item {
+            background-color: var(--card-bg);
+            height: 300px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted-color);
+            border: 1px dashed #3a3a3c;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-item span {
+            z-index: 2;
+            background: rgba(0,0,0,0.6);
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        /* Pricing Card */
+        .price-card {
+            background: linear-gradient(145deg, #1c1c1e, #2c2c2e);
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #3a3a3c;
+        }
+
+        .price-amount {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            margin: 15px 0;
+        }
+
+        .price-details {
+            color: var(--muted-color);
+            max-width: 500px;
+            margin: 0 auto 25px auto;
+        }
+
+        /* Contact Buttons */
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, opacity 0.2s;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .btn-whatsapp { background-color: #25D366; }
+        .btn-instagram { background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); }
+        .btn-facebook { background-color: #1877F2; }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--muted-color);
+            font-size: 0.9rem;
+            border-top: 1px solid #2c2c2e;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .price-amount { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nonelikeme Iann</h1>
+        <p class="subtitle">Photography & Creativity</p>
+        <p class="location-tag">📍 Available for events across Nairobi CBD</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About & Vision</h2>
+            <p class="intro-text">
+                Bringing premium creativity, professional lighting, and a unique perspective to every frame. 
+                I specialize in capturing the pulse of the city and the peak emotions of live events. 
+                For every single event involving pictures, <strong>I can be there.</strong>
+            </p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Creative Portfolio</h2>
+            <p style="color: var(--muted-color); margin-bottom: 20px;">
+                Replace these blocks by adding your actual image paths into the HTML source code when ready.
+            </p>
+            <div class="portfolio-grid">
+                <!-- To add real images later, change this to: <img src="your-image.jpg" alt="Photography"> -->
+                <div class="portfolio-item"><span>Event Photography Showcase</span></div>
+                <div class="portfolio-item"><span>CBD & Street Visuals</span></div>
+                <div class="portfolio-item"><span>Creative Concepts</span></div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>Transparent Pricing</h2>
+            <div class="price-card">
+                <h3>Simple Rate</h3>
+                <div class="price-amount">KSh 150</div>
+                <p style="font-weight: 600; margin-bottom: 10px;">Per Digital Photo</p>
+                <p class="price-details">
+                    No complicated booking tier packages. Book me for your event, and pay strictly for the high-resolution, professionally edited images you select.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Book Me Now</h2>
+            <p style="text-align: center; margin-bottom: 25px; color: var(--d1d1d6);">
+                Reach out on your preferred platform to secure your event date or creative session.
+            </p>
+            <div class="contact-container">
+                <!-- Direct WhatsApp Link using your provided number format -->
+                <a href="https://wa.me" target="_blank" class="btn btn-whatsapp">
+                    💬 Chat on WhatsApp
+                </a>
+                
+                <!-- Instagram Profile Link -->
+                <a href="https://instagram.com" target="_blank" class="btn btn-instagram">
+                    📸 Follow @Nonelikeme_iann
+                </a>
+                
+                <!-- Facebook Profile Link -->
+                <a href="https://facebook.com Iann" target="_blank" class="btn btn-facebook">
+                    👍 Connect on Facebook (@Nlm Iann)
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nonelikeme Iann Photography. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
